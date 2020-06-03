@@ -85,6 +85,21 @@ document.addEventListener("DOMContentLoaded", () => {
 					nextEl: '.advantages .swiper-button-next',
 					prevEl: '.advantages .swiper-button-prev',
 				},
+				breakpoints: {
+					1610: {
+				      slidesPerView: 3,
+				    },
+				    1000: {
+				      slidesPerView: 2,
+				    },
+				    370: {
+				    	spaceBetween: 30,
+				    },
+				    320: {
+				      spaceBetween: 20,
+				      slidesPerView: 'auto',
+				    },
+			  	}
 			});
 
 		})

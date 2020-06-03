@@ -20,6 +20,7 @@
 					size: 25px
 					margin-right: 18px
 					background: url('../img/ico-phone.svg') no-repeat center
+					background-size: contain
 
 			
 
@@ -34,3 +35,37 @@
 				margin-right: 18px
 				size: 32px
 				background: url('../img/ico-circle.svg')
+				background-size: contain
+
+@media (max-width: 1200px)
+	.footer
+		margin-top: 50px
+		padding-bottom: 50px
+
+@media (max-width: 667px)
+
+	.footer
+		padding-bottom: 30px
+
+	.footer__wrapper
+		a
+			font-size: rem(22)
+		// flex-direction: column
+
+	.footer-phone
+		margin-right: 30px
+
+	.footer__wrapper a[href^=tel]:before
+		margin-right: 15px
+		size: 21px
+
+	.footer-site a:before
+		size: 24px
+
+@media (max-width: 380px)
+	
+	.footer__wrapper
+		flex-direction: column
+
+	.footer-site
+		margin-top: 20px

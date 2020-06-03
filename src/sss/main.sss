@@ -65,9 +65,19 @@ body
 
 .form
 	&__top
+		position: relative
 		display: flex
 		justify-content: space-between
 		margin-bottom: 25px
+
+		&:before
+			content: ''
+			display: block
+			size: 73px
+			background: url('../img/ico-19.svg') no-repeat center
+			position: absolute calc(50% - 50px) * * -107px
+			background-size: contain
+
 
 	&-title
 		font-weight: bold
@@ -84,6 +94,16 @@ body
 		font-weight: 600
 		font-size: 14px
 		line-height: 113%
+
+	&-info
+		color: var(--second-color)
+		font-weight: 600
+		font-size: 20px
+		line-height: 113%
+
+		&:not(:empty)
+			~ *
+				display: none
 
 .advantages
 	margin-top: 60px
@@ -143,7 +163,180 @@ body
 			flex-direction: column
 			justify-content: flex-end
 
+	&__arrow
+		position: relative
+		display: flex
+		justify-content: flex-end
+		margin-top: 17px
+
+		.swiper-button
+			size: 19px
+			background-color: #fff
+			background-image: url('../img/ico-arrow.svg')
+			background-repeat: no-repeat
+			background-position: center
+			border-radius: 50%
+			position: static
+			margin: 0
+
+			&:after
+				display: none
+
+			&-prev
+				transform: rotate(-180deg)
+
+			&-next
+				margin-left: 6px
+
+
+@media (max-width: 1300px)
+	.intro, .forms-cont
+		max-width: 800px
+
+	.form
+		&__top:before
+			position: static
+			margin-right: 15px
+	.forms
+		&-cont
+			padding: 20px 35px
+
+	.form-title
+		margin-right: auto
+
+@media (max-width: 1300px)
+	.intro, .forms-cont
+		max-width: 100%
+
+@media (max-width: 1200px)
+
+	.title
+		font-size: 3.19rem
+		line-height: 110%
+		margin-top: 30px
+
+	.intro
+		margin-top: 40px
+
+	.advantages-title
+		font-size: 32px
+
+	.advantages__item-img
+		max-width: 200px
+
+	.advantages__item-title
+		font-size: 1.4rem
+		line-height: 120%
+
+	.advantages__item-text
+		min-height: auto
+
+	.advantages__item-info
+		padding: 10px
+
+	.advantages__item-info
+		justify-content: flex-start
+
+	.advantages__item-img img
+		height: 150px
+		object-fit: cover
+
+
+@media (max-width: 1000px)
+
+	.form-title
+		font-size: 18px
+
+	.form__top:before
+		size: 44px
+	
+	.advantages
+		.swiper-slide
+			width: 70vw
+
 @media (min-width: 667px)
 	.intro
 		.timer-form
 			display: none
+
+	.advantages__arrow
+		display: none
+
+
+
+@media (max-width: 667px)
+	body
+		background-size: 227vw auto
+		background-position: 80% 0
+	
+	.title
+		font-size: rem(41)
+
+	.subtitle
+		font-size: rem(22)
+
+	.intro
+		margin-top: 232px
+
+		&-text
+			font-size: 14px
+			line-height: 147%
+
+	.timer-form
+		margin-bottom: 25px
+
+	.forms-cont
+		.timer-form
+			display: none
+
+		.default-btn
+			width: 100%
+			text-align: center
+			justify-content: center
+
+	.form__top
+		align-items: center
+
+	.advantages-title
+		font-size: 18px
+		line-height: 115%
+
+		br
+			display: none
+
+	.advantages__item
+
+		&-img
+			max-width: 140px
+
+			img
+				height: 140px
+				object-position: top right
+
+		&-title
+			font-size: 16px
+
+		&-text
+			font-weight: 500
+			font-size: 9px
+
+	.advantages__item .label span
+		padding: 5px 12px
+		font-size: 10px
+
+@media (max-width: 380px)
+	
+	.intro, .forms-cont
+		padding: 20px
+
+	.advantages__item-img
+		max-width: 115px
+
+
+@media (max-width: 370px)
+	
+	.advantages__item-title
+		font-size: 12px
+
+	.advantages__item-img img
+		height: 150px

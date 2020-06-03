@@ -38,7 +38,7 @@
   ul
     position: relative
     float: left
-    width: 36px
+    width: 39px
     height: 50px
     font-size: 51px
     font-weight: 800
@@ -110,7 +110,7 @@
   float: left
   display: inline-block
   position: relative
-  width: 20px
+  width: 27px
   height: 70px
 
   &:first-child
@@ -123,12 +123,12 @@
   height: 10px
   position: absolute
   border-radius: 50%
-  left: 5px
+  left: 8px
 
 .flip-clock-divider
   .flip-clock-label
     position: absolute
-    bottom: 0
+    bottom: -6px
     right: -57px
     color: inherit
     text-shadow: none
@@ -162,3 +162,25 @@
 
   li.flip-clock-active
     z-index: 3
+
+@media (max-width: 370px)
+
+  .flip-clock-wrapper ul
+    width: 27px
+    height: 45px
+    font-size: 36px
+    color: #e34400
+
+  .flip-clock-divider .flip-clock-label
+    bottom: 0
+    right: -48px
+    font-size: 13px
+
+  .flip-clock-divider
+    height: 63px
+
+  .flip-clock-divider.minutes .flip-clock-label
+    right: -49px
+
+  .flip-clock-divider.seconds .flip-clock-label
+    right: -50px
