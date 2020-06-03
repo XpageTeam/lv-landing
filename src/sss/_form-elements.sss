@@ -12,7 +12,7 @@
 		margin: 24px 0 0
 
 		&-btn
-			text-align: center
+			text-align: left
 
 	&__inputs
 		display: flex
@@ -105,13 +105,12 @@ textarea.default-input__input
 	&__input
 		border: 1px solid var(--border-color)
 		border-radius: 5px
-		font-size: em(14)
+		font-size: rem(14)
 		color: inherit #fff
-		size: 100% 53px
+		size: 100% 46px
 		transition: border-color .3s ease
+		padding: 0 20px
 
-		&:not(&--select)
-			padding: 17px 16px
 
 		&:not(.default-input__input--textarea)
 			max-height: 53px
@@ -174,12 +173,18 @@ textarea.default-input__input
 
 				&:after
 					content: "*"
-					color: red
+					color: var(--second-color)
+					position: absolute
+					right: 10px
+					top: calc(50% - 9px)
 
 	&__label
 		font-size: em(12)
 		color: #919191
 		margin: 0 0 10px
+
+		&:empty
+			margin: 0
 
 		&--file
 			position: absolute -1px

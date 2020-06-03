@@ -9,6 +9,112 @@ html(lang="ru")
 		include inc/header.pug
 		main#content
 			.wrapper
-				
+				h1.title Первые 100 литров
+				.subtitle за наш счет
+				.intro
+					.timer-form
+						.timer-label До окончания акции осталось:
+						.timer-bl
+							.timer
+							.timer-info
+					.intro-title Сравни обычную воду с «Люкс Водой» бесплатно
+					.intro-text
+						p Предложение действует на первую доставку "Люкс Воды" 19 литров в любой удобный день, начиная со следующего, при сдаче до пяти пустых многооборотных бутылей 19 литров другого производителя.
+						p Дополнительно зачислим 10 бутылей воды 19 литров  со скидкой 30%. Данным предложением можно воспользоваться в любое удобное время.
+						p При сдаче тары другого производителя и покупке тары 19л "Люкс Воды" условия акции также действуют.
+						p Участвовать можно один раз.
+				.forms-cont
+					form(action="")
+						.form
+							.form__top
+								.form-title Для участия в акции<br> заполните форму
+								.timer-form
+									.timer-label До окончания акции осталось:
+									.timer-bl
+										.timer
+										.timer-info
+							.form__inputs.form__inputs--3
+								.form__inputs-input
+									.default-input
+										input.default-input__input(type="text" placeholder="Введите ФИО" required)
+										label.default-input__label
+										.default-input__error
+											.error-text
+												<!-- текст ошибки -->
+								.form__inputs-input
+									.default-input
+										input.default-input__input(type="tel" placeholder="Телефон" required)
+										label.default-input__label
+										.default-input__error
+											.error-text
+												<!-- текст ошибки -->
+								.form__inputs-input
+									.default-input
+										input.default-input__input(type="text" placeholder="Введите город" required)
+										label.default-input__label
+										.default-input__error
+											.error-text
+												<!-- текст ошибки -->
+								.form__inputs-input
+									.default-input
+										input.default-input__input(type="text" placeholder="Адрес" required)
+										label.default-input__label
+										.default-input__error
+											.error-text
+												<!-- текст ошибки -->
+								.form__inputs-input
+									.default-input
+										input.default-input__input(type="text" placeholder="Дата доставки" required)
+										label.default-input__label
+										.default-input__error
+											.error-text
+												<!-- текст ошибки -->
+								.form__inputs-input
+									.default-input
+										input.default-input__input(type="text" placeholder="Кол-во сдаваемой тары" required)
+										label.default-input__label
+										.default-input__error
+											.error-text
+												<!-- текст ошибки -->
+							.form__submit
+								.form__submit-btn
+									input.default-btn(type="submit" value="Отправить")
+				.advantages
+					.advantages-title Почему 400 000 клиентов<br> выбрали Люкс Воду?
+					.advantages__list
+						.swiper-list
+							.swiper-wrapper
+								.swiper-slide
+									.advantages__item
+										.advantages__item-img
+											img(src="img/photos/advantsges-1.jpg")
+											.label 
+												span Чище
+										.advantages__item-info
+											.advantages__item-title С глубины 100 метров
+											.advantages__item-text Источник вблизи Ильменского заповедника
+								.swiper-slide
+									.advantages__item
+										.advantages__item-img
+											img(src="img/photos/advantsges-2.jpg")
+											.label 
+												span Быстрее
+										.advantages__item-info
+											.advantages__item-title Доставим за 2 часа
+											.advantages__item-text Закажи в 2 клика в мобильном приложении, доставим за 2 часа. На акцию предложение не распространяется.
+								.swiper-slide
+									.advantages__item
+										.advantages__item-img
+											img(src="img/photos/advantsges-3.jpg")
+											.label 
+												span Выгоднее
+										.advantages__item-info
+											.advantages__item-title Скидка 15%
+											.advantages__item-text Дарим 3 литра за каждую покупку 19 литров, это скидка 15%.
+					.advantages__arrow
+						.swiper-button.swiper-button-prev
+						.swiper-button.swiper-button-next
+						
+
 		include inc/footer.pug
 		include inc/scripts.pug

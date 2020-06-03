@@ -1,5 +1,7 @@
 @import "../css/common.css"
 @import "../css/jquery.fancybox.css"
+// @import "../css/flipclock.css"
+@import "swiper/css/swiper.css"
 
 @import "_vars.sss"
 @import "_base.sss"
@@ -7,4 +9,141 @@
 @import "btns.sss"
 
 @import "base-form.sss"
+@import "_clock.sss"
 @import "my-select.sss"
+@import "footer.sss"
+
+.swiper-list
+	overflow: hidden
+
+body
+	background: url('../img/bg.jpg') no-repeat top center, var(--main-color)
+	background-size: 100vw auto
+
+.title
+	font-weight: bold
+	font-size: rem(83)
+	line-height: 113%
+	margin-top: 40px
+
+.subtitle
+	font-size: rem(45)
+	line-height: 113%
+
+.intro
+	margin-top: 66px
+	background: #FFFFFF
+	opacity: 0.95
+	border-radius: 10px
+	padding: 20px 35px
+	color: #000
+
+	&-title
+		font-weight: bold
+		font-size: rem(20)
+		line-height: 142%
+		color: var(--main-color)
+		margin-bottom: 10px
+
+	&-text
+		font-size: rem(14)
+		line-height: 142%
+
+		p
+			&:not(:first-child)
+				margin-top: 5px
+
+.intro, .forms-cont
+	max-width: 900px
+
+.forms-cont
+	padding: 40px 70px
+	background: #FFFFFF
+	border-radius: 10px
+	margin-top: 30px
+	color: #000
+
+.form
+	&__top
+		display: flex
+		justify-content: space-between
+		margin-bottom: 25px
+
+	&-title
+		font-weight: bold
+		font-size: 28px
+		line-height: 113%
+		color: var(--main-color)
+
+.timer
+	&-form
+		flex: none
+
+	&-label
+		color: var(--second-color)
+		font-weight: 600
+		font-size: 14px
+		line-height: 113%
+
+.advantages
+	margin-top: 60px
+
+	&-title
+		font-weight: bold
+		font-size: 44px
+		line-height: 113%
+		margin-bottom: 30px
+
+	&__item
+		display: flex
+		background: #fff
+		border-radius: 10px
+
+		.label
+			color: #fff
+			position: absolute 20px * * 10px
+			transform: skewX(-10deg)
+			background: var(--main-color)
+			border-radius: 5px
+
+			span
+				padding: 10px 20px
+				transform: skewX(10deg)
+				display: inline-block
+				line-height: 1
+
+		&-img
+			position: relative
+			flex: none
+
+			img
+				border-radius: 10px
+				display: block
+
+
+		&-title
+			font-size: rem(28)
+			line-height: 130%
+
+			color: var(--main-color)
+			font-weight: bold
+			margin-bottom: 15px
+			
+
+		&-text
+			font-weight: 500
+			font-size: 14px
+			line-height: 140%
+			color: #00A73E
+			min-height: 100px
+
+		&-info
+			padding: 20px 15px
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+
+@media (min-width: 667px)
+	.intro
+		.timer-form
+			display: none

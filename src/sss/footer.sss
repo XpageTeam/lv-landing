@@ -1,0 +1,36 @@
+.footer
+	margin-top: 82px
+	padding-bottom: 80px
+
+
+	&__wrapper
+		display: flex
+
+		a
+			font-weight: bold
+			font-size: 28px
+			line-height: 113%
+			display: flex
+			align-items: center
+
+			&[href^="tel"]
+				&:before
+					content: ''
+					display: block
+					size: 25px
+					margin-right: 18px
+					background: url('../img/ico-phone.svg') no-repeat center
+
+			
+
+	&-phone
+		margin-right: 80px
+
+	&-site
+		a
+			&::before
+				content: ''
+				display: block
+				margin-right: 18px
+				size: 32px
+				background: url('../img/ico-circle.svg')
