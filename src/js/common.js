@@ -77,8 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			Swiper.use([Navigation]);
 
 			new Swiper(advSlider, {
-				slidesPerView: 3,
+				// slidesPerView: 3,
 				spaceBetween: 30,
+				slidesPerView: 'auto',
 				// autoplay: true,
 				loop: false,
 				navigation: {
@@ -88,9 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
 				breakpoints: {
 					1610: {
 				      slidesPerView: 3,
-				    },
-				    1000: {
-				      slidesPerView: 2,
 				    },
 				    370: {
 				    	spaceBetween: 30,

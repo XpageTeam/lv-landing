@@ -50,11 +50,15 @@ html(lang="ru")
 												<!-- текст ошибки -->
 								.form__inputs-input
 									.default-input
-										input.default-input__input(type="text" placeholder="Введите город" required)
+										select.default-input__input.default-input__input--select
+											option(value="1") Челябинск
+											option(value="2") Москва
+
 										label.default-input__label
 										.default-input__error
 											.error-text
 												<!-- текст ошибки -->
+
 								.form__inputs-input
 									.default-input
 										input.default-input__input(type="text" placeholder="Адрес" required)
