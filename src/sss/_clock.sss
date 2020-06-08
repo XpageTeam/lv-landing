@@ -163,24 +163,76 @@
   li.flip-clock-active
     z-index: 3
 
-@media (max-width: 370px)
+@media (max-width: 1000px)
 
   .flip-clock-wrapper ul
     width: 27px
+    height: 50px
+    font-size: 38px
+
+  .flip-clock-dot.top
+    top: 15px
+
+  .flip-clock-dot.bottom
+    top: 30px
+
+  .flip-clock-divider .flip-clock-label
+    bottom: 0px
+    right: -50px
+    font-size: 14px
+
+  .flip-clock-divider.minutes .flip-clock-label
+    right: -51px
+
+  .flip-clock-divider.seconds .flip-clock-label
+    right: -54px
+
+@media (max-width: 660px)
+
+  .flip-clock-wrapper ul
+    width: 25px
+    height: 50px
+    font-size: 38px
+
+
+@media (max-width: 370px)
+
+  .flip-clock-wrapper ul
+    width: 19px
     height: 45px
-    font-size: 36px
+    font-size: 30px
     color: #e34400
+
+  .flip-clock-dot
+    width: 6px
+    height: 6px
+    left: 12px
+
+  .flip-clock-dot
+    left: 8px
+
+  .flip-clock-divider
+    width: 20px
+    height: 60px
+
+  .flip-clock-dot.top
+    top: 19px
+
+  .flip-clock-divider .flip-clock-label
+    bottom: 6px
+    right: -37px
+    font-size: 11px
 
   .flip-clock-divider .flip-clock-label
     bottom: 0
-    right: -48px
-    font-size: 13px
+    right: -38px
+    font-size: 11px
 
   .flip-clock-divider
-    height: 63px
+    height: 58px
 
   .flip-clock-divider.minutes .flip-clock-label
-    right: -49px
+    right: -40px
 
   .flip-clock-divider.seconds .flip-clock-label
-    right: -50px
+    right: -40px
