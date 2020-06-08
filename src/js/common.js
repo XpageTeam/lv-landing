@@ -21,48 +21,6 @@ document.addEventListener("DOMContentLoaded", function(){
 		transitionEffect: "slide",
 	});
 
-
-	
-	var clock = $('.forms-cont .timer').FlipClock( 600, {
-		// clockFace: 'DailyCounter',
-		autoStart: false,
-		countdown: true,
-		showHours: false,
-		language: 'ru-ru',
-		callbacks: {
-			stop: function() {
-				$('.forms-cont .timer-info').html('Акция закончилась!')
-			}
-		}
-	});
-
-	
-	clock.setTime(600);
-	clock.setCountdown(true);
-	clock.start();
-
-
-	var clockMobile = $('.intro .timer').FlipClock( 600, {
-		// clockFace: 'DailyCounter',
-		autoStart: false,
-		countdown: true,
-		language: 'ru-ru',
-		callbacks: {
-			stop: function() {
-				$('.intro .timer-info').html('Акция закончилась!')
-			}
-		}
-	});
-
-	
-	clockMobile.setTime(600);
-	clockMobile.setCountdown(true);
-	clockMobile.start();
-
-
-
-
-
 });
 
 document.addEventListener("DOMContentLoaded", () => {

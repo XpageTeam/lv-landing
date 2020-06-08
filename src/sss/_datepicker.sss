@@ -1,11 +1,16 @@
 @import "jquery-ui/themes/base/datepicker.css"
 
+#ui-datepicker-div
+	z-index: 99 !important
+
 .input--date
 	background-image: url("../img/ico-arrow-select.svg")
 	background-repeat: no-repeat
 	background-position: right 19px center
 
-	
+.ui-state-disabled
+	color: #cccccc !important
+
 .ui-datepicker
 	background: #fff
 	padding: 15px
@@ -16,15 +21,15 @@
 	width: auto
 	min-width: 330px
 
-	&::before
-		content: ''
-		display: block
-		size: 20px
-		background-color: #fff
-		position: absolute -10px * * 40px
-		transform: rotate(45deg)
-		border-left: 1px solid #DCE0EB
-		border-top: 1px solid #DCE0EB
+	// &::before
+	// 	content: ''
+	// 	display: block
+	// 	size: 20px
+	// 	background-color: #fff
+	// 	position: absolute -10px * * 40px
+	// 	transform: rotate(45deg)
+	// 	border-left: 1px solid #DCE0EB
+	// 	border-top: 1px solid #DCE0EB
 
 
 	thead
@@ -99,5 +104,11 @@
 				position: absolute calc(50% - 4px) * * calc(50% - 4px)
 
 
+@media (max-width: 660px)
 
-	// ui-datepicker-prev 
+	.ui-datepicker
+		min-width: auto
+
+@media (max-width: 370px)
+	.ui-datepicker
+		width: calc(100% - 60px) !important
