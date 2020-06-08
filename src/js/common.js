@@ -1,5 +1,6 @@
 import $ from "jquery";
 import is from "is_js";
+import "./date-picker.js"
 
 window.jQuery = $
 window.$ = $
@@ -9,6 +10,7 @@ require("./jquery.fancybox.js");
 require("./flipclock.min.js");
 
 document.addEventListener("DOMContentLoaded", function(){
+
 	$(".fancybox").fancybox({
 		trapFocus: false,
 		touch: false,

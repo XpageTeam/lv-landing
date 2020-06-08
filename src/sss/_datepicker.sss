@@ -1,0 +1,103 @@
+@import "jquery-ui/themes/base/datepicker.css"
+
+.input--date
+	background-image: url("../img/ico-arrow-select.svg")
+	background-repeat: no-repeat
+	background-position: right 19px center
+
+	
+.ui-datepicker
+	background: #fff
+	padding: 15px
+	border: 1px solid #DCE0EB
+	box-shadow: 5px 5px 20px rgba(195, 200, 220, 0.3)
+	border-radius: 5px
+	margin-top: 15px
+	width: auto
+	min-width: 330px
+
+	&::before
+		content: ''
+		display: block
+		size: 20px
+		background-color: #fff
+		position: absolute -10px * * 40px
+		transform: rotate(45deg)
+		border-left: 1px solid #DCE0EB
+		border-top: 1px solid #DCE0EB
+
+
+	thead
+		background: rgba(245, 246, 250, 0.42)
+		border-radius: 5px
+		font-size: 12px
+		color: #8C93A6
+
+	th
+		font-weight: 400
+		padding: 14px 8px
+
+	td
+		font-size: rem(14)
+		color: #383E4D
+		padding: 5px
+
+	.ui-datepicker-title
+		margin: 0
+		text-align: left
+		order: -1
+		margin-right: auto
+		color: #000
+
+		select
+			border: 0
+			width: auto
+			margin: 0 20px 0 0
+
+	.ui-datepicker-header
+		display: flex
+		padding: 0 0 15px 0
+
+
+	.ui-corner-all
+		position: relative
+		cursor: pointer
+
+		span
+			position: static
+
+	.ui-state-default
+		text-align: center
+
+	.ui-datepicker
+		&-month
+			margin-right: 20px
+
+		&-week-end
+			a
+				color: var(--thrid-color)
+
+
+		td 
+			a, span
+				padding: 5px
+
+		&-prev
+			transform: rotate(180deg)
+
+		&-prev, &-next
+			left: 0 !important
+			top: 0 !important
+
+			&::before
+				content: ''
+				display: block
+				size: 8px
+				border-top: 1px solid var(--thrid-color)
+				border-right: 1px solid var(--thrid-color)
+				transform: rotate(45deg)
+				position: absolute calc(50% - 4px) * * calc(50% - 4px)
+
+
+
+	// ui-datepicker-prev 
