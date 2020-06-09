@@ -13,6 +13,27 @@
 @import "my-select.sss"
 @import "footer.sss"
 
+.grecaptcha-badge
+	display: none !important
+
+
+.sms-interval-seconds
+	font-size: rem(10)
+	font-size: 10px
+	position: absolute
+	bottom: -32px
+	left: 0
+
+.phone-check__input
+	position: relative
+
+	a
+		position: absolute * 0 -16px *
+		font-size: 10px
+		color: var(--main-color)
+		text-decoration: underline
+		text-underline-position: under
+
 
 .swiper-list
 	overflow: hidden
@@ -194,6 +215,12 @@ body
 		.swiper-slide
 			width: 40vw
 
+@media (max-width: 1500px)
+
+	.forms-cont, .intro
+		max-width: 740px
+
+
 @media (max-width: 1300px)
 	.intro, .forms-cont
 		max-width: 800px
@@ -248,7 +275,11 @@ body
 		height: 150px
 		object-fit: cover
 
+@media (max-width: 1200px)
 
+	.intro
+		max-width: 500px
+		
 @media (max-width: 1000px)
 
 	.form-title
