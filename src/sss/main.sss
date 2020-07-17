@@ -13,14 +13,23 @@
 @import "my-select.sss"
 @import "footer.sss"
 
+.popup#popup-message-block-callback
+	&.fancybox-content
+		width: 500px !important
+		max-width: 100%
+
+
+	.forms-cont
+		padding: 0
+
 .head
 	position: absolute 0 0 * 0
 	padding-top: 20px
 
 .default-btn--fixed
-	position: fixed * 20px 20px *
+	position: fixed * 100px 130px *
 	z-index: 100
-	background: #00a73e
+	background: var(--second-color)
 	
 .grecaptcha-badge
 	display: none !important
@@ -232,6 +241,9 @@ body
 	.advantages
 		.swiper-slide
 			width: 40vw
+
+	.default-btn--fixed
+		position: fixed * 20px 20px *
 
 @media (max-width: 1500px)
 
