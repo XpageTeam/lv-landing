@@ -13,6 +13,15 @@
 @import "my-select.sss"
 @import "footer.sss"
 
+.head
+	position: absolute 0 0 * 0
+	padding-top: 20px
+
+.default-btn--fixed
+	position: fixed * 20px 20px *
+	z-index: 100
+	background: #00a73e
+	
 .grecaptcha-badge
 	display: none !important
 
@@ -58,8 +67,8 @@ body
 
 .intro
 	margin-top: 66px
-	background: #FFFFFF
-	opacity: 0.95
+	background: rgba(255, 255, 255, 0.95)
+	// opacity: 0.95
 	border-radius: 10px
 	padding: 20px 35px
 	color: #000
@@ -231,8 +240,9 @@ body
 
 
 @media (max-width: 1300px)
-	.intro, .forms-cont
-		max-width: 800px
+
+	// .intro, .forms-cont
+	// 	max-width: 800px
 
 	.form
 		&__top:before
@@ -245,13 +255,11 @@ body
 	.form-title
 		margin-right: auto
 
-@media (max-width: 1300px)
-
-	.intro, .forms-cont
-		max-width: 100%
-		
 
 @media (max-width: 1200px)
+
+	.forms-cont
+		max-width: 100%
 
 	.title
 		font-size: 3.19rem
@@ -284,12 +292,23 @@ body
 		height: 150px
 		object-fit: cover
 
-@media (max-width: 1200px)
-
 	.intro
 		max-width: 500px
+
+@media (max-width: 1100px)
+
+	.form-title
+		margin-right: 30px
+
 		
 @media (max-width: 1000px)
+
+	.title
+		font-size: 2rem
+		margin-top: 20px
+
+	.subtitle
+		font-size: 2rem
 
 	.form-title
 		font-size: 18px
@@ -309,21 +328,27 @@ body
 	.advantages__arrow
 		display: none
 
+	
+
 
 
 @media (max-width: 667px)
 	body
 		background-size: 227vw auto
 		background-position: 80% 0
+
+	.title
+		margin-top: 55px
 	
 	.title
-		font-size: rem(41)
+		font-size: 2.1rem
 
 	.subtitle
 		font-size: rem(22)
 
 	.intro
-		margin-top: 232px
+		margin-top: 250px
+		background: #fff
 
 		&-text
 			font-size: 14px
@@ -370,6 +395,9 @@ body
 	.advantages__item .label span
 		padding: 5px 12px
 		font-size: 10px
+
+	.default-btn--fixed
+		padding-inline: 10px
 
 @media (max-width: 380px)
 	

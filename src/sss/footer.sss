@@ -5,6 +5,8 @@
 
 	&__wrapper
 		display: flex
+		align-items: flex-end
+		justify-content: flex-end
 
 		a
 			font-weight: bold
@@ -25,8 +27,8 @@
 
 			
 
-	&-phone
-		margin-right: 80px
+	// &-phone
+	// 	margin-right: 80px
 
 	&-site
 		a
@@ -45,20 +47,26 @@
 
 @media (max-width: 667px)
 
+	.footer__wrapper a
+		font-size: 1rem
+
 	.footer
 		padding-bottom: 30px
 
 	.footer__wrapper
+		align-items: flex-start
+
 		a
-			font-size: rem(22)
-		// flex-direction: column
+			font-size: rem(16)
+			
+		
 
 	.footer-phone
-		margin-right: 30px
+		margin: 0 !important
 
 	.footer__wrapper a[href^=tel]:before
 		margin-right: 15px
-		size: 21px
+		size: 15px
 
 	.footer-site a:before
 		size: 24px
