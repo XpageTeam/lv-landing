@@ -13,6 +13,20 @@
 @import "my-select.sss"
 @import "footer.sss"
 
+.forms-cont
+	.form__inputs, .form__submit, .form-title, .timer-form
+		display: none
+
+	.form__top
+		margin: 0
+
+
+		&::after
+			content: 'Акция закончилась'
+			font-size: 34px
+			color: var(--second-color)
+			font-weight: 600
+
 .popup#popup-message-block-callback
 	&.fancybox-content
 		width: 500px !important
@@ -271,7 +285,16 @@ body
 @media (max-width: 1200px)
 
 	.forms-cont
-		max-width: 100%
+		max-width: 500px
+
+		.form__top:after
+			font-size: 32px
+	
+	.form__top
+		align-items: center
+
+
+
 
 	.title
 		font-size: 3.19rem
@@ -349,6 +372,12 @@ body
 		background-size: 227vw auto
 		background-position: 80% 0
 
+	.forms-cont
+
+		.form__top:after
+			font-size: 20px
+	
+
 	.title
 		margin-top: 55px
 	
@@ -368,6 +397,7 @@ body
 
 	.timer-form
 		margin-bottom: 25px
+		display: none
 
 	.forms-cont
 		.timer-form
